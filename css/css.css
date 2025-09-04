@@ -1,0 +1,110 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Skrifttype på Bjarnes Burger */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* Font size */
+  font-size: 1.5rem;
+}
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+/* h1 er oversigts teksten der står i midten af burgeren*/
+h1 { 
+  color: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+  color:rgb(121, 17, 17)
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+/* Billeder i 100% */
+img{ 
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+#topnav {
+background-color: black;
+color: rgb(255, 255, 255);
+}
+
+#topnav a {
+  color: rgb(255, 255, 255);
+
+}
+#topnav a:hover {
+  color: rgb(255, 37, 168);
+  }
+
+  /*KOMMENTAR man skriver*/
+  /* hero sektionen styles den sjove parantes shift-option-8*/
+  header {
+    height: 100vh;
+    background-color: deeppink;
+    background-image: url("../images/hero.png");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+  background-position: center center;
+
+    /* man kan give den en absurt farve for at se om det virker */
+    /* ..= betyder man hopper ud på formappen og så skriver man / og så kommer dine options til dig hvilken mappe */
+    
+/* læg teksten i midten vertikalt og  horisontal */
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  /* RESPONSIV DESIGN */
+  /* mobile enheder */
+  @media (max-width: 600px){
+    body{
+      background-color: aqua;
+    }
+    #stemning {
+      display:block;
+    }
+  }
+
+  /* Tablets, ipad, &c. (601px- 1024px */
+  @media (min-width: 601px) and (max-width: 1024px){
+     body {
+      background-color: rgb(212, 1, 131);
+    }
+    #stemning {
+      display:block; 
+     } 
+  }
